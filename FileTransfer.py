@@ -23,9 +23,11 @@ import os
 from cStringIO import StringIO
 
 TEMPLATE = ('<!DOCTYPE html><html><head>' +
-            '<link href="<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/' +
-            'css/bootstrap.min.css" rel="stylesheet"></head><body>' +
-            '<div class="navbar"><div class="navbar-inner">' +
+            '<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/' +
+            'css/bootstrap.min.css" rel="stylesheet"><link href="' +
+            'http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/' +
+            'bootstrap-theme.min.css" rel="stylesheet"></head><body>' +
+            '<div class="navbar navbar-inverse"><div class="navbar-header">' +
             '<a class="navbar-brand" href="#">Pythonista File Transfer</a>' +
             '</div></div><div class="container">' +
             '<h2>Upload File</h2>{{ALERT}}'
